@@ -34,19 +34,25 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-RE-ysw">
-                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="66.5" width="375" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kbh-RE-ysw" secondAttribute="trailing" id="qcP-eF-OBN"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gmS-Rb-dhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3cQ-Kh-mW0"/>
+                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dac-vL-q6n"/>
                             <constraint firstItem="gmS-Rb-dhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EXT-hG-3yD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmS-Rb-dhx" secondAttribute="trailing" id="Klt-r3-Spc"/>
                             <constraint firstItem="gmS-Rb-dhx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LEg-2h-poj"/>
+                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Vne-rF-BDO"/>
                             <constraint firstItem="gmS-Rb-dhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="pdy-dY-Avk"/>
+                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wxv-T7-gwP"/>
                             <constraint firstItem="gmS-Rb-dhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zKV-bA-QNq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
