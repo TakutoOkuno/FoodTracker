@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,54 +15,51 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gmS-Rb-dhx">
-                                <rect key="frame" x="0.0" y="40" width="375" height="96.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T1K-Hi-Y23">
+                                <rect key="frame" x="0.0" y="40" width="414" height="424.33333333333331"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-mZ-cdz">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaT-3n-XTb">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K00-vF-der">
-                                        <rect key="frame" x="0.0" y="28.5" width="129" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IY-Le-lrT">
+                                        <rect key="frame" x="0.0" y="28.333333333333329" width="414" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-RE-ysw">
-                                        <rect key="frame" x="0.0" y="66.5" width="375" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRK-ta-Tgb">
+                                        <rect key="frame" x="0.0" y="66.333333333333329" width="151" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
                                         <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNV-wU-m16"/>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDc-YY-Ev6"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-xq-Wmx">
+                                        <rect key="frame" x="0.0" y="104.33333333333337" width="320" height="320"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Kbh-RE-ysw" secondAttribute="trailing" id="qcP-eF-OBN"/>
+                                    <constraint firstAttribute="trailing" secondItem="1IY-Le-lrT" secondAttribute="trailing" id="LS7-tC-TuK"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3cQ-Kh-mW0"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dac-vL-q6n"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EXT-hG-3yD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmS-Rb-dhx" secondAttribute="trailing" id="Klt-r3-Spc"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LEg-2h-poj"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Vne-rF-BDO"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="pdy-dY-Avk"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wxv-T7-gwP"/>
-                            <constraint firstItem="gmS-Rb-dhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zKV-bA-QNq"/>
+                            <constraint firstItem="T1K-Hi-Y23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Clc-c7-71o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1K-Hi-Y23" secondAttribute="trailing" id="J9d-In-J0w"/>
+                            <constraint firstItem="T1K-Hi-Y23" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kKk-bM-jxh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mealNameLabel" destination="Ici-mZ-cdz" id="heZ-jW-CxG"/>
-                        <outlet property="nameTextField" destination="K00-vF-der" id="6Lp-lo-5EQ"/>
+                        <outlet property="mealNameLabel" destination="QaT-3n-XTb" id="BKo-hx-AFb"/>
+                        <outlet property="nameTextField" destination="1IY-Le-lrT" id="5c7-lt-nlc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
